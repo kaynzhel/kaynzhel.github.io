@@ -4,48 +4,167 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {background-color: #f5f5f5; font-family: Arial; margin: 0;}
+body {
+	background-color: #f5f5f5; 
+	font-family: Arial;
+	margin: 0;}
+
 header {
 	padding: 25px;
 	background: #132840; 
 	text-align: center;
-	font-size: 30px; 
+	font-size: 50px; 
 	color: white;
-	font-family: Optima;
+	font-family: Optima;}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #0D1F33;
+  font-size: 25px;}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  background-color: #0D1F33;
+  color: white;
+  text-decoration: none;
 }
 
-nav {
-	padding: 10px 20px;
+#navbar a:hover {background-color: #A1B5C1;}
+
+/* Page content */
+.content {padding: 15px;}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+img {
+	float: left;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 90px;}
+
+h1 {
+	margin: 50px;
+	margin-bottom: 25px;
+	font-size: 45px;
+	text-align: center;
+	font-family: Optima;}
+
+article {
+	padding: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: justify;
+	text-indent: 50px;}
+
+p {
+	font-size: 20px;
+	line-height: 30px;}
+
+table {
+	width: 75%;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;}
+
+table, th, td {border-collapse: collapse;}
+
+th {font-size: 25px;}
+
+td {
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;}
+
+footer {
 	background-color: #0D1F33;
-	font-size: 25px;
-}
-
-nav li {
-	display: inline;
-}
-
-nav li a {
-	padding: 10px 20px;
-	background-color: #0D1F33;
-	color: white;
-	text-decoration: none;
-}
-
-nav li a:hover {
-	background-color: #A1B5C1;
-}
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+	color: white;}
 
 </style>
 </head>
 
 <body>
 <header>Kaye Ena Crayzhel F. Misay</header>
-<nav>
-	<li><a href="https://kaynzhel.github.io" target="_blank";>Home</a></li> 
-	<li><a href="https://kaynzhel.github.io" target="_blank";>Projects</a></li>
-	<li><a href="https://kaynzhel.github.io" target="_blank";>Resume</a></li>
-	<li><a href="https://kaynzhel.github.io" target="_blank";>Blog</a></li>
-	<li><a href="https://kaynzhel.github.io" target="_blank";>Contact</a></li>
-</nav>
+<div id="navbar">
+	<a href="https://kaynzhel.github.io" target="_blank";>Home</a>
+	<a href="https://kaynzhel.github.io" target="_blank";>Projects</a>
+	<a href="https://kaynzhel.github.io" target="_blank";>Resume</a>
+	<a href="https://kaynzhel.github.io" target="_blank";>Blog</a>
+	<a href="Navigation/contacts.html" target="_blank";>Contact</a>
+</div>
+
+<img src = "img/pfp.jpg"; alt = "Profile Picture">
+
+<div class="content">
+	<h1>About Me</h1>
+	<article>
+		<p>	Good day! I am currently a second year student at the University of Alberta studying Computing Science in Specialization. My primary interest as of now is software development, but I am open to other branches of computing science.</p>
+		<p> With significant experience in a collaborative and individual setting by working in a non-industry job, I would like to apply them in a technical position. Besides these, I also like writing about various topics including the intersectionality between technology and society.</p>
+	</article>
+</div>
+<div>
+	<table>
+		<tr>
+			<th>Technical Skills</th>
+			<th>Relevant Coursework</th></tr>
+		<tr>
+			<td> Python</td>
+			<td> Foundations of Computing Science</td></tr>
+		<tr>
+			<td> C/C++</td>
+			<td> Object Oriented Programming</td></tr>
+		<tr>
+			<td> HTML/CSS</td>
+			<td> Practical Programming Methodology</td></tr>
+		<tr>
+			<td> SQL</td>
+			<td> File and Database Management</td></tr>
+		<tr>
+			<td> Git/Github</td>
+			<td> Algorithms</td></tr>
+		<tr><td></td>
+			<td> Formal Systems and Logic</td></tr>
+	</table>
+</div>
+
+<footer> 2021 &#xa9 Kaye Ena Crayzhel F. Misay. All rights reserved.</footer>
+<!-- Referenced: w3schools.com -->
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
