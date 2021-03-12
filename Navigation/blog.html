@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Kaye Misay </title>
+<meta name="description" content="Kaye Ena Crayzhel's Personal Website">
+<meta name="author" content="Kaye Ena Crayzhel F. Misay">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--icons come from realfavicongenerator.net-->
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="../img/site.webmanifest">
+<link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+body {
+	background-color: #f5f5f5; 
+	font-family: Arial;
+	margin: 0;}
+
+header {
+	padding: 25px;
+	background: #132840; 
+	text-align: center;
+	font-size: 50px; 
+	color: white;
+	font-family: Optima;}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #0D1F33;
+  font-size: 25px;}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  padding: 10px 20px;
+  background-color: #0D1F33;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover {background-color: #A1B5C1;}
+
+/* Page content */
+.content {padding: 15px;}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+section {margin-bottom: 400px;}
+h1 {
+	margin: 50px;
+	margin-bottom: 10px;
+	font-size: 45px;
+	text-align: center;
+	font-family: Optima;}
+
+p {
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+a {
+	text-decoration-line: none;
+	color: #225187;
+}
+
+footer {
+	background-color: #0D1F33;
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+	color: white;}
+
+</style>
+</head>
+
+<body>
+<header>Kaye Ena Crayzhel F. Misay</header>
+<div id="navbar">
+	<a href="https://kaynzhel.github.io">Home</a>
+	<a href="https://kaynzhel.github.io">Projects</a>
+	<a href="https://kaynzhel.github.io">Resume</a>
+	<a href="https://kaynzhel.github.io">Blog</a>
+	<a href="Navigation/contacts.html">Contact</a>
+</div>
+
+<section>
+	<p>This page is under construction. Stay tuned!</p>
+</section>
+
+<footer> 2021 &#xa9 Kaye Ena Crayzhel F. Misay. All rights reserved.</footer>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
