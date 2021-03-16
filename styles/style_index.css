@@ -1,0 +1,40 @@
+img {
+	float: left;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: 90px;}
+
+h1 {
+	margin: 50px;
+	margin-bottom: 25px;
+	font-size: 45px;
+	text-align: center;
+	font-family: Optima;}
+
+article {
+	padding: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: justify;
+	text-indent: 50px;}
+
+p {
+	font-size: 20px;
+	line-height: 30px;}
+
+table {
+	width: 75%;
+	margin-top: 25px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;}
+
+table, th, td {border-collapse: collapse;}
+
+th {font-size: 25px;}
+
+td {
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;}
