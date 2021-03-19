@@ -1,7 +1,25 @@
-section {margin-bottom: 400px;}
+section {
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-bottom: 400px;
+}
 
-p {
+h1 {
+	margin: 50px;
+	margin-bottom: 25px;
+	font-size: 50px;
 	text-align: center;
+	font-family: Arial;
+	color: #333333;
+}
+
+ol {text-align: left;}
+
+li {
 	font-size: 20px;
-	line-height: 30px;
+	font-family: Helvetica;}
+
+a {
+	text-decoration-line: none;
+	color: #225187;
 }
