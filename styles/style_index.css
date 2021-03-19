@@ -33,7 +33,8 @@ table {
 
 table, th, td {border-collapse: collapse;}
 
-th {font-size: 25px;}
+th {font-size: 25px;
+	color: #333333;}
 
 td {
 	font-size: 20px;
