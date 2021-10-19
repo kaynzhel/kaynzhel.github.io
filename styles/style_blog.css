@@ -9,15 +9,14 @@ h1 {
 	margin-bottom: 25px;
 	font-size: 50px;
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
 	color: #333333;
 }
 
-ol {text-align: left;}
-
-li {
+div {
+	text-align: left;
 	font-size: 20px;
-	font-family: Helvetica;}
+	font-family: 'Roboto', sans-serif;
+}
 
 a {
 	text-decoration-line: none;
