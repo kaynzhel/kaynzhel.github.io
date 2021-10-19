@@ -5,3 +5,32 @@ p {
 	font-size: 20px;
 	line-height: 30px;
 }
+
+#project_name {
+	font-size: 30px
+}
+a {
+	text-decoration-line: none;
+	color: #225187;
+}
+
+#project_bioinformatics {
+	background-color: white;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+#project_money_for_time {
+	background-color: lightgrey;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+#project_website {
+	background-color: white;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 50px;
+}
