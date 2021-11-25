@@ -35,3 +35,10 @@ a {
 	padding: 10px;
 	border-radius: 50px;
 }
+
+#project_control {
+	background-color: lightgrey;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 50px;
+}
