@@ -36,8 +36,15 @@ a {
 	border-radius: 50px;
 }
 
-#project_control {
+#project_momentum {
 	background-color: lightgrey;
+	margin: 30px;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+#project_control {
+	background-color: white;
 	margin: 30px;
 	padding: 10px;
 	border-radius: 50px;
