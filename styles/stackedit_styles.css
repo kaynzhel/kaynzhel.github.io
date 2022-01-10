@@ -1,10 +1,12 @@
 .stackedit__html{
-    margin-bottom:180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left:auto;
     margin-right:auto;
-    padding-left:30px;
-    padding-right:30px;
+    padding:50px;
     max-width:750px;
+    background-color: white;
+	border-radius: 10px;
 }
 
 h1{
