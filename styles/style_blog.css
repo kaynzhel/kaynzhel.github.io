@@ -1,6 +1,26 @@
-section {
-	padding-right: 100px;
-	padding-left: 100px;
+/* For mobile phones: */
+[class*="col-"] {
+	padding-right: 0px;
+	padding-left: 0px;
+  }
+  
+  @media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-tablet {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+  }
+  
+  @media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-desktop {
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+  }
+
+.blog_body {
 	margin-bottom: 400px;
 }
 
