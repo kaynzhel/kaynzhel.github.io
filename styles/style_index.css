@@ -2,9 +2,20 @@
 [class*="col-"] {
 	width: 100%;
   }
+
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+	.info article, h1 {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.col-skills-courses table, th, td {
+		padding-left: 5px;
+	}
+} 
   
+/* For tablets: */
   @media only screen and (min-width: 600px) {
-	/* For tablets: */
 	.col-s-1 {width: 8.33%;}
 	.col-s-2 {width: 16.66%;}
 	.col-s-3 {width: 25%;}
@@ -17,6 +28,13 @@
 	.col-s-10 {width: 83.33%;}
 	.col-s-11 {width: 91.66%;}
 	.col-s-12 {width: 100%;}
+	.col-s-info article, h1 {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.col-skills-courses table, th, td {
+		padding-left: 25px;
+	}
   }
   
   @media only screen and (min-width: 768px) {
@@ -33,11 +51,18 @@
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+	.col-info article, h1 {
+		padding-right: 50px;
+		padding-left: 25px;
+	}
+	.col-skills-courses table, th, td {
+		padding-left: 25px;
+	}
   }
 
-h1 {
-	padding: 0px;
-	padding-left: 25px;
+.info h1 {
+	padding-top: 0px;
+	padding-bottom: 0px;
 	margin-top: 50px;
 	margin-bottom:10px;
 	font-size: 45px;
@@ -80,16 +105,14 @@ h1 {
 	overflow: auto;
 }
 
-.about_me article {
-	padding-right: 50px;
-	padding-left: 25px;
+.info article {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: justify;
 	margin-right: auto;
 }
 
-.about_me p {
+.info p {
 	font-size: 20px;
 	line-height: 30px;
 }
@@ -102,7 +125,6 @@ table {
 
 table, th, td {
 	border-collapse: collapse;
-	padding-left: 25px;
 }
 
 th {
