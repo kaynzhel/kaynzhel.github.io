@@ -24,43 +24,46 @@
 </head>
 
 <body>
-<header>Kaye Ena Crayzhel F. Misay</header>
-<div id="navbar">
-	<a href="https://kaynzhel.github.io">Home</a>
-	<a href="../Navigation/projects.html">Projects</a>
-	<a href="../Navigation/resume_kaye.pdf">Resume</a>
-	<a href="../Navigation/blog.html">Blog</a>
-	<a href="../Navigation/contacts.html">Contact</a>
-</div>
-
-<div class="content">
-	<div class = "col-tablet col-desktop blog_body">
-		<div class="2022_blog">
-			<h1>2022</h1>
-			<div class="posts">
-				<a href="../blog/infolink_advisor.html"><strong>February 03: </strong>Senior Peer Advisor: InfoLink</a><hr>
-			</div>
+<div id="page-container">
+	<div id="content-wrap">
+		<header>Kaye Ena Crayzhel F. Misay</header>
+		<div id="navbar">
+			<a href="https://kaynzhel.github.io">Home</a>
+			<a href="../Navigation/projects.html">Projects</a>
+			<a href="../Navigation/resume_kaye.pdf">Resume</a>
+			<a href="../Navigation/blog.html">Blog</a>
+			<a href="../Navigation/contacts.html">Contact</a>
 		</div>
-		<div class="2021_blog">
-			<h1>2021</h1>
-			<div class="posts">
-				<a href="../blog/hackathon.html"><strong>November 25: </strong>First Hackathon: Second Place</a><hr>
-				<a href="../blog/been_a_while.html"><strong>October 19: </strong> It's been a while</a><hr>
-				<a href="../blog/winter2021.html"><strong>April 16: </strong>Winter 2021 Semester: Accomplished</a><hr>
-				<a href="../blog/moneyfortime.html"><strong>April 04: </strong>Using SQLite for <em>Money for Time</em></a><hr>
-				<a href="../blog/nserc.html"><strong>March 19: </strong>NSERC USRA</a><hr>
-				<a href="../blog/first_html.html"><strong>March 18: </strong>My First HTML file</a><hr>
+
+		<div class="content">
+			<div class = "col-tablet col-desktop blog_body">
+				<div class="2022_blog">
+					<h1>2022</h1>
+					<div class="posts">
+						<a href="../blog/infolink_advisor.html"><strong>February 03: </strong>Senior Peer Advisor: InfoLink</a><hr>
+					</div>
+				</div>
+				<div class="2021_blog">
+					<h1>2021</h1>
+					<div class="posts">
+						<a href="../blog/hackathon.html"><strong>November 25: </strong>First Hackathon: Second Place</a><hr>
+						<a href="../blog/been_a_while.html"><strong>October 19: </strong> It's been a while</a><hr>
+						<a href="../blog/winter2021.html"><strong>April 16: </strong>Winter 2021 Semester: Accomplished</a><hr>
+						<a href="../blog/moneyfortime.html"><strong>April 04: </strong>Using SQLite for <em>Money for Time</em></a><hr>
+						<a href="../blog/nserc.html"><strong>March 19: </strong>NSERC USRA</a><hr>
+						<a href="../blog/first_html.html"><strong>March 18: </strong>My First HTML file</a><hr>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<footer id="footer">
+		<script>
+		document.write(new Date().getFullYear())
+		</script> &copy; Kaye Ena Crayzhel F. Misay. All rights reserved.
+	</footer>	
 </div>
-
-<footer>
-	<script>
-	document.write(new Date().getFullYear())
-	</script> &copy; Kaye Ena Crayzhel F. Misay. All rights reserved.
-</footer>
-
+<!-- Referenced: w3schools.com -->
 <script>
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -73,11 +76,11 @@ var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+	if (window.pageYOffset >= sticky) {
+	navbar.classList.add("sticky")
+	} else {
+	navbar.classList.remove("sticky");
+	}
 }
 </script>
 </body>
