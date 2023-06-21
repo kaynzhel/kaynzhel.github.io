@@ -1,5 +1,7 @@
 import './globals.css';
 import { Montserrat } from 'next/font/google';
+import Head from "next/head";
+import NavBar from "@/app/components/NavBar";
 
 const mont = Montserrat({
     subsets: ['latin'],
@@ -13,8 +15,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang={"en"}>
+          <Head>
+              <meta name={"viewport"} content={"width=device-width, initial-scale=1"} />
+              <link rel={"icon"} href={"/favicon.ico"} />
+          </Head>
+        <body className={`${mont.variable} font-mont w-full min-h-screen`}>
+            <NavBar />
+            <main>
+                {children}
+            </main>
+        </body>
+      </html>
+    // <html lang="en">
+    //   <body className={mont.className}>{children}</body>
+    // </html>
   )
 }
