@@ -1,12 +1,13 @@
 import * as React from "react"
+
 const GitHubIcon = ({ className, ...props }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"
         viewBox="0 0 512 512"
-        {...props}
         className={`w-full h-auto ${className}`}
+        {...props}
     >
         <path fill="rgba(255, 255, 255, 0)" d="M0 0h512v512H0z" />
         <path
@@ -22,8 +23,8 @@ const LinkedInIcon = ({ className, ...props }) => (
         width="1em"
         height="1em"
         viewBox="0 0 256 256"
-        {...props}
         className={`w-full h-auto ${className}`}
+        {...props}
     >
         <path fill="none" d="M0 0h256v256H0z" />
         <g fill="none">

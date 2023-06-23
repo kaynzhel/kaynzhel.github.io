@@ -22,13 +22,8 @@ export default function RootLayout({ children }) {
           </Head>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
-            <main>
-                {children}
-            </main>
+            {children}
         </body>
       </html>
-    // <html lang="en">
-    //   <body className={mont.className}>{children}</body>
-    // </html>
   )
 }

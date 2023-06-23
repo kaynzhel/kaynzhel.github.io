@@ -2,8 +2,7 @@
 import React from 'react';
 import Logo from "@/app/components/Logo";
 import { GitHubIcon, LinkedInIcon } from "@/app/components/icons/NavBarIcons";
-import { motion } from "framer-motion";
-import {CustomNavBarIcon, CustomNavBarLink} from "@/app/components/helpers/NavBarHelpers";
+import { CustomNavBarIcon, CustomNavBarLink } from "@/app/components/helpers/NavBarHelpers";
 
 const NavBar = () => {
     const navOptionClass = "mx-4";
