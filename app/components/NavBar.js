@@ -5,7 +5,7 @@ import { GitHubIcon, LinkedInIcon } from "@/app/components/icons/NavBarIcons";
 import { CustomNavBarIcon, CustomNavBarLink } from "@/app/components/helpers/NavBarHelpers";
 
 const NavBar = () => {
-    const navOptionClass = "mx-4";
+    const navOptionClass = "mx-4 text-light";
     const navIconClass = "w-6 mx-3";
 
     return (
