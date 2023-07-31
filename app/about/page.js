@@ -3,7 +3,7 @@ import Head from "next/head";
 import AnimatedText from "@/app/components/AnimatedText";
 import GenLayout from "@/app/components/GenLayout";
 import Image from "next/image";
-import Experience from "@/app/components/Experience";
+import Experience from "@/app/components/about/Experience";
 
 const About = () => {
     return (
