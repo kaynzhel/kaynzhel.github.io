@@ -11,7 +11,7 @@ function Home() {
                 <div className={"flex items-center justify-between w-full"}>
                     <div className={"w-1/2"}>
                         <Image
-                            src={"/home_images/self_photo.svg"}
+                            src={"/home_images/home_photo_2.svg"}
                             alt={"Kaye's Home Photo"}
                             className={"w-full h-auto"}
                             width={50}
