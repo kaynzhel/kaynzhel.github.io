@@ -11,10 +11,10 @@ const NavBar = () => {
     return (
         <header className={"w-full px-32 py-8 font-medium flex items-center justify-between"}>
             <nav>
-                <CustomNavBarLink className={navOptionClass} href={"/"} title={"Home"} />
-                <CustomNavBarLink className={navOptionClass} href={"/about"} title={"About"} />
-                <CustomNavBarLink className={navOptionClass} href={"/projects"} title={"Projects"} />
-                <CustomNavBarLink className={navOptionClass} href={"/blog"} title={"Blog"} />
+                {/*<CustomNavBarLink className={navOptionClass} href={"/"} title={"Home"} />*/}
+                {/*<CustomNavBarLink className={navOptionClass} href={"/about"} title={"About"} />*/}
+                {/*<CustomNavBarLink className={navOptionClass} href={"/projects"} title={"Projects"} />*/}
+                {/*<CustomNavBarLink className={navOptionClass} href={"/blog"} title={"Blog"} />*/}
             </nav>
             <nav className={"flex items-center justify-center flex-wrap"}>
                 <CustomNavBarIcon className={navIconClass} href={"https://github.com/kaynzhel"} icon={<GitHubIcon />} />
