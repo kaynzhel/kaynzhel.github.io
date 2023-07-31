@@ -4,10 +4,12 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 58, 36, 59;
-  /*--background-end-rgb: 88, 68, 88;*/
-  --background-end-rgb: 119, 102, 119;
-  /*--background-end-rgb: 151, 138, 151;*/
+  --background-primary-rgb: 58, 36, 59;
+  --background-light-5-rgb: 88, 68, 88;
+  --background-light-4-rgb: 119, 102, 119;
+  --background-light-3-rgb: 151, 138, 151;
+  --background-light-2-rgb: 185, 175, 185;
+  --background-light-1-rgb: 219, 215, 219;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -23,7 +25,7 @@ body {
   background: linear-gradient(
       to bottom right,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-light-3-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-light-4-rgb));
 }
