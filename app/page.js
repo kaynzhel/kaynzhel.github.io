@@ -16,6 +16,8 @@ function Home() {
                             className={"w-full h-auto"}
                             width={50}
                             height={50}
+                            priority
+                            sizes={"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
                         />
                     </div>
                     <div className={"w-1/2 flex flex-col items-center self-center"}>
