@@ -9,17 +9,24 @@ const mont = Montserrat({
     variable: "--font-mont",
 })
 
-export const metadata = {
-    title: "Kaye's Portfolio",
-    description: "My name is Kaye Ena Crayzhel Misay. Committed to life-long learning, I am interested in fullstack and mobile development.",
+export const metadata  = {
+    author: "Kaye Ena Crayzhel Misay",
+    creator: "Kaye Ena Crayzhel Misay",
+    description: "Full Stack Software Developer with a passion for crafting elegant solutions. Practical internship experience in both full-stack and mobile development, complemented by strong customer service and tutoring background. Effective communicator skilled at conveying complex ideas concisely, fostering seamless team collaboration. Let's connect!",
+    keywords: ["Kaye", "Kaye Misay", "Kaye Ena Crayzhel", "Kaye Ena Crayzhel", "Portfolio Website", "Personal Website", "Developer"],
+    title: "Kaye Ena Crayzhel Misay: Personal Website",
 }
 
 export default function RootLayout({ children }) {
   return (
       <html lang={"en"}>
           <Head>
-              <meta name={"viewport"} content={"width=device-width, initial-scale=1"} />
-              <link rel={"icon"} href={"/favicon.ico"} />
+              <link
+                  rel="icon"
+                  href="/icon.png"
+                  type="image/png"
+                  sizes="png"
+              />
           </Head>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
