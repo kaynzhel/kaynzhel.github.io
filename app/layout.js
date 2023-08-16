@@ -29,17 +29,17 @@ export default function RootLayout({ children }) {
                   type="image/png"
                   sizes="png"
               />
-          </Head>
-          <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
-          <Script id="google-analytics">
-              {`
+              <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
+              <Script id="google-analytics">
+                  {`
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
          
                   gtag('config', 'G-JTE6RG65P1');
             `}
-          </Script>
+              </Script>
+          </Head>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
             {children}
