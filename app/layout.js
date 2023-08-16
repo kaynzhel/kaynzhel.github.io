@@ -3,6 +3,8 @@ import { Montserrat } from 'next/font/google';
 import Head from "next/head";
 import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
+import Script from 'next/script';
+
 
 const mont = Montserrat({
     subsets: ['latin'],
@@ -28,6 +30,16 @@ export default function RootLayout({ children }) {
                   sizes="png"
               />
           </Head>
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
+          <Script id="google-analytics">
+              {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+         
+                  gtag('config', 'G-JTE6RG65P1');
+            `}
+          </Script>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
             {children}
