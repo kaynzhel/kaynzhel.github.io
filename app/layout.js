@@ -17,6 +17,9 @@ export const metadata  = {
     description: "Full Stack Software Developer with a passion for crafting elegant solutions. Practical internship experience in both full-stack and mobile development, complemented by strong customer service and tutoring background. Effective communicator skilled at conveying complex ideas concisely, fostering seamless team collaboration. Let's connect!",
     keywords: ["Kaye", "Kaye Misay", "Kaye Ena Crayzhel", "Kaye Ena Crayzhel", "Portfolio Website", "Personal Website", "Developer"],
     title: "Kaye Ena Crayzhel Misay: Personal Website",
+    verification: {
+        google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
+    }
 }
 
 export default function RootLayout({ children }) {
