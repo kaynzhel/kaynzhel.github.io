@@ -1,4 +1,4 @@
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
@@ -33,4 +33,25 @@ const CustomNavBarLink = ({className= "", href, title}) => {
     )
 }
 
-export { CustomNavBarIcon, CustomNavBarLink };
+const CustomNavBarMobileLink = ({className= "", href, title, toggle }) => {
+    const pathname = usePathname();
+    const router = useRouter();
+    const handleClick = () => {
+        toggle();
+        router.push(href);
+    }
+
+    return (
+        <Link href={href} className={`${className} relative group my-2`} onClick={handleClick}>
+            {title}
+
+            <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+                ${pathname === href ? 'w-full' : 'w-0'}
+            `}>
+                &nbsp;
+            </span>
+        </Link>
+    )
+}
+
+export { CustomNavBarIcon, CustomNavBarLink, CustomNavBarMobileLink };
