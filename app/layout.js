@@ -18,7 +18,7 @@ export const metadata  = {
     keywords: ["Kaye", "Kaye Misay", "Kaye Ena Crayzhel", "Kaye Ena Crayzhel", "Portfolio Website", "Personal Website", "Developer"],
     title: "Kaye Ena Crayzhel Misay: Personal Website",
     verification: {
-        // google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
+        google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
     }
 }
 
@@ -33,18 +33,16 @@ export default function RootLayout({ children }) {
                   sizes="png"
               />
           </Head>
-          <head>
-              <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
-              <Script id="google-analytics">
-                  {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-         
-                  gtag('config', 'G-JTE6RG65P1');
-            `}
-              </Script>
-          </head>
+          <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
+          <Script id="google-analytics">
+              {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+     
+              gtag('config', 'G-JTE6RG65P1');
+        `}
+          </Script>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
             {children}
