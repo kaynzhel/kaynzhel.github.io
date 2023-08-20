@@ -41,7 +41,7 @@ function Home() {
                                 href={"/documents/resume_kaye.pdf"}
                                 target={"_blank"}
                             >
-                                Resume <LinkArrow className={"w-6 ml-1"}/>
+                                Resume <LinkArrow className={"!w-6 ml-1 md:!w-4"}/>
                             </Link>
                             <Link
                                 className={`ml-4 flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
