@@ -19,7 +19,6 @@ export const metadata  = {
     title: "Kaye Ena Crayzhel Misay: Personal Website",
     verification: {
         // google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
-        google: 'G-JTE6RG65P1',
     }
 }
 
@@ -33,6 +32,8 @@ export default function RootLayout({ children }) {
                   type="image/png"
                   sizes="png"
               />
+          </Head>
+          <head>
               <Script src="https://www.googletagmanager.com/gtag/js?id=G-JTE6RG65P1" />
               <Script id="google-analytics">
                   {`
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
                   gtag('config', 'G-JTE6RG65P1');
             `}
               </Script>
-          </Head>
+          </head>
         <body className={`${mont.variable} font-mont w-full min-h-screen`}>
             <NavBar />
             {children}
