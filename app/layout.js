@@ -18,7 +18,8 @@ export const metadata  = {
     keywords: ["Kaye", "Kaye Misay", "Kaye Ena Crayzhel", "Kaye Ena Crayzhel", "Portfolio Website", "Personal Website", "Developer"],
     title: "Kaye Ena Crayzhel Misay: Personal Website",
     verification: {
-        google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
+        // google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
+        google: 'G-JTE6RG65P1',
     }
 }
 
