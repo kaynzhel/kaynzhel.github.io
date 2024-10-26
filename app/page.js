@@ -26,11 +26,9 @@ function Home() {
                             text={"Hi, I'm Kaye."}
                         />
                         <p className={"my-4 text-base md:text-md sm:text-sm"}>
-                            I'm currently a Computing Science student at the University of Alberta.
-                            I also have previous experiences as a Software Developer intern at <a className={"font-semibold hover:underline"} href={"https://arcurve.com"} target={"_blank"}>Arcurve</a>,
-                            a Software Developer Co-op at <a className={"font-semibold hover:underline"} href={"https://www.clio.com/"} target={"_blank"}>Clio</a>,
-                            and as an Undergraduate Research Assistant at the UAlberta Department of Computing Science.
-                            My interests include full stack and mobile development.
+                            I'm currently a Software Developer at <a className={"font-semibold hover:underline"} href={"https://www.clio.com/"} target={"_blank"}>Clio</a>,
+                            transforming the legal experience through <a className={"font-semibold hover:underline"} href={"https://www.clio.com/accounting/"} target={"_blank"}>Clio Accounting</a>.
+                            With a strong interest in full-stack development, I am dedicated to building user-centered applications.
                         </p>
                         <p className={"mb-4 self-start lg:self-center md:text-md sm:text-sm"}>
                             Explore my work, learn about my background, and let's connect!
