@@ -3,11 +3,12 @@ import GenLayout from "@/app/components/GenLayout";
 import AnimatedText from "@/app/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/app/components/icons/MiscIcons";
+import About from "@/app/about/page";
 
 function Home() {
   return (
-    <main className={"text-light flex flex-grow"}>
-      <div className={"flex-col justify-center items-center"}>
+    <main className={"text-light"}>
+      <div id="home" className={"flex min-h-screen flex-row items-center justify-center"}>
         <GenLayout className={"flex"}>
           <div className={"flex lg:flex-col w-full items-center"}>
             <div className={"w-1/2 md:w-full"}>
@@ -25,6 +26,7 @@ function Home() {
               <AnimatedText
                 className={"text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"}
                 text={"Hi, I'm Kaye."}
+                textHighlight={"Kaye"}
               />
               <p className={"my-4 text-base md:text-md sm:text-sm"}>
                 I'm currently a Software Developer at <a className={"font-semibold hover:underline"} href={"https://www.clio.com/"} target={"_blank"}>Clio</a>,
@@ -57,6 +59,9 @@ function Home() {
             </div>
           </div>
         </GenLayout>
+      </div>
+      <div className="w-full">
+        <About />
       </div>
     </main>
   )
