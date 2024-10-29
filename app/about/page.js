@@ -9,9 +9,19 @@ const About = () => {
   return (
     <GenLayout className={"flex flex-col py-16"}>
       <AnimatedText className={"mb-16 text-4xl"} text={"Ang Aking Kwento"} textHighlight={"Kwento"} />
-      <div className={"grid w-full grid-cols-8 gap-16"}>
-        <div className={"col-span-4 flex flex-col items-start justify-start"}>
-          <h2 className={"mb-2 text-lg font-bold uppercase text-dark"}>About Me</h2>
+      <div className={"grid grid-cols-2 gap-8 w-full lg:grid-cols-1"}>
+        <div id="about_image" className={"relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 order-2 lg:order-1 w-full mx-auto lg:w-2/3"}>
+          <div className={"absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"} />
+          <Image
+            src={"/home_images/self_photo.svg"}
+            alt={"Kaye's About Me Photo"}
+            className={"w-full h-auto lg:w-1/2 rounded-2xl mx-auto"}
+            width={50}
+            height={50}
+          />
+        </div>
+        <div id="about_text" className={"flex flex-col items-start justify-start order-1 lg:order-2"}>
+          <h2 className={"mb-2 text-lg font-bold uppercase text-dark lg:mx-auto"}>About Me</h2>
           <p className={"mb-4 font-medium"}>
             Kamusta! I'm Kaye Ena Crayzhel F. Misay, but you can call me <strong>Kaye</strong>.
             Here's a bit about my journey.
@@ -41,16 +51,6 @@ const About = () => {
           <p className={"font-medium"}>
             Outside of tech, I like going for walks, reading and watching all things ice hockey, and spending time with my partner, family, and friends!
           </p>
-        </div>
-        <div className={"col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8"}>
-          <div className={"absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"} />
-          <Image
-            src={"/home_images/self_photo.svg"}
-            alt={"Kaye's About Me Photo"}
-            className={"w-full h-auto rounded-2xl"}
-            width={50}
-            height={50}
-          />
         </div>
       </div>
     </GenLayout>
