@@ -8,14 +8,14 @@ import About from "@/app/about/page";
 function Home() {
   return (
     <main className={"text-light"}>
-      <div id="home" className={"flex min-h-screen flex-row items-center justify-center"}>
+      <div id="home" className={"flex min-h-screen flex-row items-center justify-center lg:pt-16"}>
         <GenLayout className={"flex"}>
           <div className={"flex lg:flex-col w-full items-center"}>
             <div className={"w-1/2 md:w-full"}>
               <Image
                 src={"/home_images/home_photo_2.svg"}
                 alt={"Kaye's Home Photo"}
-                className={"w-full h-auto md:inline-block md:w-full"}
+                className={"w-full h-auto md:inline-block"}
                 width={50}
                 height={50}
                 priority
