@@ -44,9 +44,11 @@ export default function RootLayout({ children }) {
         `}
       </Script>
       <body className={`${mont.variable} font-mont w-full min-h-screen overflow-x: hidden;`}>
-        <NavBar />
-        {children}
-        <Footer />
+        <div className={"flex flex-col min-h-screen"}>
+          <NavBar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
