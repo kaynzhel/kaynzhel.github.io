@@ -36,7 +36,7 @@ const NavBar = () => {
           <CustomNavBarIcon className={navIconClass} href={"https://www.linkedin.com/in/kaye-ena-crayzhel-misay/"} icon={<LinkedInIcon />} />
         </nav>
       </div>
-      <div className={"absolute left-[50%] top-2"}>
+      <div className={"absolute left-[50%] top-2 -translate-x-1/2"}>
         <Logo />
       </div>
     </header>
