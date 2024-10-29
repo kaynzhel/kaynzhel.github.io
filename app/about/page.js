@@ -18,14 +18,14 @@ const About = () => {
           </p>
           <p className={"mb-4 font-medium"}>
             Back in 2013, in a northern city in the Philippines, I discovered my passion for Computer Science.
-            I was in a 7th-grade class of about 30 students, we were introduced to the basics——
-            computer parts like SATA hard drives, flowcharts, logic, and the history of what is now a thriving tech
+            I was in a 7th-grade class of about 30 students, we were introduced to the basics—computer parts
+            like SATA hard drives, flowcharts, logic, and the history of what is now a thriving tech
             industry. As a young girl learning about the likes of Ada Lovelace and Grace Hopper, one thought made sense:
             <strong className={"text-dark/75"}> I want to be just like them.</strong>
           </p>
             <p className={"mb-4 font-medium"}>
-              Fast forward to 2018, the start of my senior year of high school in a city just south of Edmonton——
-              I was set on applying to the University of Alberta’s Computing Science program, and so, I did!
+              Fast forward to 2018, the start of my senior year of high school in a city just south of Edmonton—I was
+              set on applying to the University of Alberta’s Computing Science program, and so, I did!
               By September 2019, I was starting my journey at university.
             </p>
           <p className={"mb-4 font-medium"}>

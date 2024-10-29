@@ -60,7 +60,7 @@ function Home() {
           </div>
         </GenLayout>
       </div>
-      <div className="w-full">
+      <div id="about" className="w-full">
         <About />
       </div>
     </main>
