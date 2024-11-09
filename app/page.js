@@ -3,7 +3,7 @@ import GenLayout from "@/app/components/GenLayout";
 import AnimatedText from "@/app/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/app/components/icons/MiscIcons";
-import About from "@/app/about/page";
+import About from "@/app/components/about/About";
 
 function Home() {
   return (
