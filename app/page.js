@@ -37,7 +37,7 @@ function Home() {
                 Explore my work, learn about my background, and let's connect!
               </p>
               <div className={"flex items-center self-start mt-2 lg:self-center"}>
-                <Link
+                {/* <Link
                   className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                     hover:bg-light hover:text-dark border border-sold border-transparent hover:border-dark
                     md:p-2 md:px-4 md:text-base`}
@@ -45,15 +45,15 @@ function Home() {
                   target={"_blank"}
                 >
                   Resume <LinkArrow className={"!w-6 ml-1 md:!w-4"}/>
-                </Link>
+                </Link> */}
                 <Link
-                  className={`ml-4 flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
+                  className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                     hover:bg-light hover:text-dark border border-sold border-transparent hover:border-dark
                     md:p-2 md:px-4 md:text-base`}
                   href={"mailto:kayeena.misay@gmail.com?subject=Hi Kaye, I would like to connect!"}
                   target={"_blank"}
                 >
-                  Contact
+                  Contact <LinkArrow className={"!w-6 ml-1 md:!w-4"}/>
                 </Link>
               </div>
             </div>
