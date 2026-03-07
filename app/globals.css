@@ -4,17 +4,10 @@
 
 html {
   scroll-behavior: smooth;
+  background: #3A243B;
 }
 
 body {
   color: #f5f5f5;
-  background: linear-gradient(
-    to bottom right,
-    #3A243B,
-    #4E3550,
-    #584458,
-    #665566
-  );
-  background-attachment: fixed;
   min-height: 100vh;
 }

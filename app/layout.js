@@ -35,7 +35,14 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-JTE6RG65P1');
         `}
       </Script>
-      <body className={`${mont.variable} font-mont overflow-x-hidden`}>
+      <body className={`${mont.variable} font-mont overflow-x-hidden relative`}>
+        <div
+          className="fixed inset-0 -z-10 min-h-screen w-full"
+          style={{
+            background: 'linear-gradient(to bottom right, #3A243B, #4E3550, #584458, #665566)',
+          }}
+          aria-hidden="true"
+        />
         <NavBar />
         {children}
         <Footer />
