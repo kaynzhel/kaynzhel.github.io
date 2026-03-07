@@ -2,31 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-primary-rgb: 58, 36, 59;
-  --background-light-5-rgb: 88, 68, 88;
-  --background-light-4-rgb: 119, 102, 119;
-  --background-light-3-rgb: 151, 138, 151;
-  --background-light-2-rgb: 185, 175, 185;
-  --background-light-1-rgb: 219, 215, 219;
+html {
+  scroll-behavior: smooth;
 }
 
-/*@media (prefers-color-scheme: dark) {*/
-/*  :root {*/
-/*    --foreground-rgb: 255, 255, 255;*/
-/*    --background-start-rgb: 0, 0, 0;*/
-/*    --background-end-rgb: 0, 0, 0;*/
-/*  }*/
-/*}*/
-
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #f5f5f5;
   background: linear-gradient(
-      to bottom right,
-      rgb(var(--background-light-5-rgb)),
-      rgb(var(--background-light-4-rgb)),
-      rgb(var(--background-light-3-rgb)),
-      rgb(var(--background-light-2-rgb))
-    )
+    to bottom right,
+    #3A243B,
+    #4E3550,
+    #584458,
+    #665566
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
 }
