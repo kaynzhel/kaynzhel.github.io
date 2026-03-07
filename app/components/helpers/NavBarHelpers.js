@@ -1,8 +1,8 @@
-import { usePathname, useRouter } from "next/navigation";
+"use client"
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from 'react';
 
 const CustomNavBarIcon = ({className = "", href, icon}) => {
   return (
@@ -19,12 +19,9 @@ const CustomNavBarIcon = ({className = "", href, icon}) => {
 }
 
 const CustomNavBarLink = ({className= "", href, title}) => {
-  // TODO: ${window.location.hash === href ? 'w-full' : 'w-0'}
-
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
-
       <span className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 w-0`}>
         &nbsp;
       </span>
@@ -33,19 +30,16 @@ const CustomNavBarLink = ({className= "", href, title}) => {
 }
 
 const CustomNavBarMobileLink = ({className= "", href, title, toggle }) => {
-  const pathname = usePathname();
   const router = useRouter();
   const handleClick = () => {
     toggle();
     router.push(href);
   }
 
-  // TODO: ${pathname === href ? 'w-full' : 'w-0'}
   return (
     <Link href={href} className={`${className} relative group my-2`} onClick={handleClick}>
       {title}
-
-      <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 w-0`}>
+      <span className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 w-0`}>
         &nbsp;
       </span>
     </Link>
