@@ -33,6 +33,7 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
 /.next/
+/out/
 node_modules
 
 ### WebStorm ###
