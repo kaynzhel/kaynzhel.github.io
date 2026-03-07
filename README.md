@@ -1,13 +1,10 @@
-## How to get started
+# Kaye's Portfolio
 
-First, run the development server:
+A personal portfolio website that showcases my background, experience, projects, and tech stack. Built with Next.js and deployed on GitHub Pages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js
+- **UI:** React, Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** react-icons
