@@ -4,15 +4,14 @@ import { motion } from "framer-motion";
 import AnimatedText from "@/app/components/AnimatedText";
 import GenLayout from "@/app/components/GenLayout";
 import {
-  SiPython, SiRuby, SiTypescript, SiJavascript, SiGraphql,
+  SiPython, SiRuby, SiTypescript, SiJavascript,
   SiHtml5, SiCss, SiRubyonrails, SiDjango, SiAngular,
   SiReact, SiDotnet, SiNextdotjs, SiTailwindcss,
-  SiGit, SiGithub, SiSqlite, SiHeroku, SiFirebase,
+  SiGit, SiGithub, SiSqlite, SiHeroku, SiVercel, SiSupabase,
   SiMysql, SiTurbo, SiAlpinedotjs, SiBlazor, SiFigma,
 } from "react-icons/si";
 import { FaJava, FaDatabase, FaVial } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
-import { VscAzure } from "react-icons/vsc";
 
 const categories = [
   {
@@ -35,19 +34,18 @@ const categories = [
     items: [
       { name: "Ruby on Rails", icon: SiRubyonrails },
       { name: "Django", icon: SiDjango },
-      { name: "AngularJS", icon: SiAngular },
-      { name: "React Native", icon: SiReact },
       { name: "React", icon: SiReact },
-      { name: ".NET", icon: SiDotnet },
-      { name: "EF Core", icon: SiDotnet },
-      { name: "Next.js", icon: SiNextdotjs },
       { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "Turbo", icon: SiTurbo },
-      { name: "Alpine.js", icon: SiAlpinedotjs },
-      { name: "MudBlazor", icon: SiBlazor },
       { name: "RSpec", icon: FaVial },
       { name: "Capybara", icon: FaVial },
-      { name: "Figma", icon: SiFigma },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "React Native", icon: SiReact },
+      { name: "Alpine.js", icon: SiAlpinedotjs },
+      { name: "AngularJS", icon: SiAngular },
+      { name: ".NET", icon: SiDotnet },
+      { name: "EF Core", icon: SiDotnet },
+      { name: "MudBlazor", icon: SiBlazor },
     ],
   },
   {
@@ -57,7 +55,10 @@ const categories = [
       { name: "GitHub", icon: SiGithub },
       { name: "MySQL", icon: SiMysql },
       { name: "SQLite", icon: SiSqlite },
+      { name: "Figma", icon: SiFigma },
       { name: "Heroku", icon: SiHeroku },
+      { name: "Vercel", icon: SiVercel },
+      { name: "Supabase", icon: SiSupabase },
       // { name: "Firebase", icon: SiFirebase },
       // { name: "Azure", icon: VscAzure },
     ],
