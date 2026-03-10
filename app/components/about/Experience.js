@@ -95,6 +95,7 @@ const Experience = () => {
             work={[
               "Taught user-centered software design and UI/UX principles in an Intro to Human-Computer Interaction course.",
             ]}
+            tech={"Figma"}
           />
           <ExperienceDetails
             company={"Arcurve Inc."}
