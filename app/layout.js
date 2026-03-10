@@ -9,14 +9,36 @@ const mont = Montserrat({
   variable: "--font-mont",
 })
 
-export const metadata  = {
+export const metadata = {
+  metadataBase: new URL("https://kaynzhel.github.io"),
   author: "Kaye Ena Crayzhel Misay",
   creator: "Kaye Ena Crayzhel Misay",
-  description: "Full Stack Software Developer with a passion for crafting elegant solutions. Practical internship experience in both full-stack and mobile development, complemented by strong customer service and tutoring background. Effective communicator skilled at conveying complex ideas concisely, fostering seamless team collaboration. Let's connect!",
+  description: "Kaye is a Full Stack Software Developer with a strong passion for building user-centered applications. Let's connect!",
   keywords: ["Kaye", "Kaye Misay", "Kaye Ena Crayzhel", "Portfolio Website", "Personal Website", "Developer"],
   title: "Kaye Ena Crayzhel Misay: Personal Website",
   icons: {
     icon: "/icon.png",
+  },
+  openGraph: {
+    title: "Kaye Ena Crayzhel Misay: Personal Website",
+    description: "Full Stack Software Developer with a passion for crafting elegant solutions. Practical internship experience in both full-stack and mobile development.",
+    url: "/",
+    siteName: "Kaye Ena Crayzhel Misay",
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: "Kaye Ena Crayzhel Misay",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kaye Ena Crayzhel Misay: Personal Website",
+    description: "Full Stack Software Developer with a passion for crafting elegant solutions.",
+    images: ["/icon.png"],
   },
   verification: {
     google: "uC9na6ORiEjjLU1XB__p8V-0zEFt6sGZ0D6Ky0NAR3U"
